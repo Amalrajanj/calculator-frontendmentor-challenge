@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>calc</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="toggle">
+        <h2>calc</h2>
+        <div class="theme-switch">
+          <div class="theme-num">
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </div>
+          <div class="theme-toggle">
+            <div onclick="theme1()" class="theme1 themeIndicator" id="theme1"></div>
+            <div onclick="theme2()" class="theme2 themeIndicator" id="theme2"></div>
+            <div onclick="theme3()" class="theme3 themeIndicator" id="theme3"></div>
+        </div>
+        </div>
+      </div>
+      <input type="text" class="output" id="outPutBox" readonly>
+      <div class="input">
+        <div class="inputGrid">
+          <div onclick="calcFn(7)" class="calcBtn">7</div>
+          <div onclick="calcFn(8)" class="calcBtn">8</div>
+          <div onclick="calcFn(9)" class="calcBtn">9</div>
+          <div onclick="removeLast()" class="calcBtn calcDel">DEL</div>
+          <div onclick="calcFn(4)" class="calcBtn">4</div>
+          <div onclick="calcFn(5)" class="calcBtn">5</div>
+          <div onclick="calcFn(6)" class="calcBtn">6</div>
+          <div onclick="calcFn('+')" class="calcBtn">+</div>
+          <div onclick="calcFn(1)" class="calcBtn">1</div>
+          <div onclick="calcFn(2)" class="calcBtn">2</div>
+          <div onclick="calcFn(3)" class="calcBtn">3</div>
+          <div onclick="calcFn('-')" class="calcBtn">-</div>
+          <div onclick="calcFn('.')" class="calcBtn">.</div>
+          <div onclick="calcFn(0)" class="calcBtn">0</div>
+          <div onclick="calcFn('/')" class="calcBtn">/</div>
+          <div onclick="calcFn('*')" class="calcBtn">x</div>
+          <div onclick="resetOutput()" class="calcBtn calcBtnReset">RESET</div>
+          <div onclick="calAll()" class="calcBtn calcBtnEquals">=</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="/index.js"></script>
+</html>
